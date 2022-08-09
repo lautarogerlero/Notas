@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Blog de notas</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Blog de notas
+        </h1>
+    </header>
+
+    <aside class="animate__animated animate__fadeInDown">
+        <h2>Inicie sesión</h2>
+        <form id="formSesion">
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            <input type="submit" value="Ingresar">
+            
+        </form>
+    </aside>
+
+    <main>
+        <div class="buttonContainer">
+            <button type="button" id="newNote">Nueva nota</button>
+            <button type="button" id="logOut">Cerrar sesión</button>
+        </div>
+        <div class="containerNewNote">
+            <form id="formNewNote">
+                <div class="containerCloseButton">
+                    <button type="button" id="cerrarForm">X</button>
+                </div>
+                <label for="fechaNewNote">Fecha</label>
+                <input type="date" name="fechaNewNote" id="fechaNewNote" required>
+                <label for="horaNewNote">Hora</label>
+                <input type="time" name="horaNewNote" id="horaNewNote" required>
+                <label for="textNewNote">Ingrese nota</label>
+                <input type="text" name="textNewNote" id="textNewNote" required>
+                <label>
+                    <input type="submit" value="Guardar" id="submitNewNote">
+                </label>
+            </form>
+        </div>
+
+        <section id="containerNotes">
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
